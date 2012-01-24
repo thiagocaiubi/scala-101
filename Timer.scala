@@ -1,7 +1,7 @@
 object Timer {
 	
 	def main(args: Array[String]) {
-		onePerSecond(timeFlies)
+		onePerSecond(() => println("Time flies like an arrow..."))
 	}
 	
 	def onePerSecond(callback: () => Unit) {
@@ -9,9 +9,5 @@ object Timer {
 			callback()
 			Thread sleep 1000
 		}
-	}
-	
-	def timeFlies() {
-		println("Time flies like an arrow...")
 	}
 }
