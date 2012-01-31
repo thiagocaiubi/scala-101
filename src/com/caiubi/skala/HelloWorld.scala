@@ -1,3 +1,5 @@
+package com.caiubi.skala;
+
 object HelloWorld {
 	
 	def main(args: Array[String]) {

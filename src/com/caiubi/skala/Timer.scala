@@ -1,3 +1,5 @@
+package com.caiubi.skala;
+
 object Timer {
 	
 	def main(args: Array[String]) {

@@ -1,3 +1,5 @@
+package com.caiubi.skala;
+
 object Numbers {
 	
 	def main(args: Array[String]) {

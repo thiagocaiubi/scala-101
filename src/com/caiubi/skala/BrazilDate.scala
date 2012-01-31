@@ -1,3 +1,5 @@
+package com.caiubi.skala;
+
 import java.util.{Date, Locale}
 import java.text.DateFormat
 import java.text.DateFormat._
