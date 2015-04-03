@@ -4,14 +4,14 @@ import akka.actor.Actor
 import spray.http.MediaTypes
 import spray.routing.HttpService
 
-class MyServiceActor extends Actor with MyService {
+class PingServiceActor extends Actor with PingService {
 
   def actorRefFactory = context
 
   def receive = runRoute(myRoute)
 }
 
-trait MyService extends HttpService {
+trait PingService extends HttpService {
 
   val myRoute =
     path("ping") {
