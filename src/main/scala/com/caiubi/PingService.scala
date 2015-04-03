@@ -8,12 +8,12 @@ class PingServiceActor extends Actor with PingService {
 
   def actorRefFactory = context
 
-  def receive = runRoute(myRoute)
+  def receive = runRoute(pingRoute)
 }
 
 trait PingService extends HttpService {
 
-  val myRoute =
+  val pingRoute =
     path("ping") {
       get {
         respondWithMediaType(MediaTypes.`text/plain`) {
